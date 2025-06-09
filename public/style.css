@@ -1311,6 +1311,48 @@ nav a:hover {
   gap: 8px;
 }
 
+
+/* HAMBURGER MENU STYLE */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+  }
+
+  nav ul.navbar {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #000;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 1000;
+  }
+
+  nav ul.navbar.active {
+    display: flex;
+  }
+}
+
+
 .section-label .dot {
   width: 10px;
   height: 10px;
