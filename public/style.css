@@ -19,22 +19,6 @@ html,body {
   color: #ffffff;
   overflow-x: hidden;
 }
-.scale-wrapper {
-  transform-origin: top center;
-  transition: transform 0.3s ease;
-}
-
-@media (max-width: 768px) {
-  .scale-wrapper {
-    transform: scale(0.85); /* Shrink for mobile */
-  }
-}
-
-@media (max-width: 480px) {
-  .scale-wrapper {
-    transform: scale(0.75); /* Shrink more for very small phones */
-  }
-}
 
 header {
   height: 80px; /* Fixed navbar height */
