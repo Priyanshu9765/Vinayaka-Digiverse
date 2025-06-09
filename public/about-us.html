@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <header>
+  <div class="logo">
+    <img  class="logo-img" src="assets/vdv fulllogo.png" alt="Vinayaka Digiverse Logo" />
+  </div>
+  <nav>
+  <ul class="navbar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about-us.html">About Us</a></li>
+
+    <li class="dropdown">
+      <a href="#">Solutions ▾</a>
+      <ul class="dropdown-menu">
+
+        <!-- Graphic Design submenu -->
+<li class="has-submenu">
+  <a href="#">Graphic Design ▸</a>
+  <ul class="submenu">
+    <li><a href="logo.html">Logo Designing</a></li>
+    <li><a href="Brochure.html">Brochure Designing</a></li>
+    <li><a href="festivalimage.html">Festival Image Design</a></li>
+    <li><a href="motion.html">Motion Graphics Editing</a></li>
+  </ul>
+</li>
+
+        <!-- Web Design submenu -->
+        <li class="has-submenu">
+          <a href="#">Web Design ▸</a>
+          <ul class="submenu">
+            <li><a href="Web design/webdesign.html">Website Design</a></li>
+            <li><a href="Web design/websitedev.html">Website Development</a></li>
+            <li><a href="Web design/wordpress.html">WordPress Development</a></li>
+            <li><a href="Web design/figma.html">Figma Website Development</a></li>
+          </ul>
+        </li>
+
+         <!-- Custom Applications submenu -->
+         <li class="has-submenu">
+           <a href="#">Content ▸</a>
+           <ul class="submenu">
+             <li><a href="Content/contentwrite.html">Content Writing</a></li>
+             <li><a href="Content/contentcreation.html">Content Creation</a></li>
+             
+           </ul>
+         </li>
+        <!-- VIDEO & PRINTING submenu -->
+<li class="has-submenu">
+  <a href="#">Video & Printing ▸</a>
+  <ul class="submenu">
+    <li><a href="Video&design/Premiumprint.html">Premium Printing</a></li>
+    <li><a href="Video&design/Professionaldes.html">Professional Photography</a></li>
+    <li><a href="Video&design/ProCine.html">Professional Cinematography</a></li>
+    <li><a href="Video&design/ProVideo.html">Professional Video Editing</a></li>
+  </ul>
+</li>
+
+
+        <!-- Marketing submenu -->
+        <li class="has-submenu">
+          <a href="#">Marketing ▸</a>
+          <ul class="submenu">
+            <li><a href="Marketing/SMM.html">SOCIAL MEDIA MANAGEMENT</a></li>
+            <li><a href="Marketing/SMMark.html">SOCIAL MEDIA MARKETING</a></li>
+            <li><a href="Marketing/SEO.html">SEO</a></li>
+            <li><a href="Marketing/SEM.html">SEM</a></li>
+            <li><a href="Marketing/DIGITAL.html">Digital Marketing</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </li>
+
+    <li><a href="Blog/blog.html">Blogs</a></li>
+<li><a href="Pricing/Pricing.html">Pricing</a></li>
+<li><a href="Contact us/contact.html">Get in touch</a></li>
+  </ul>
+</nav>
+
+
+
+</header>
+
+<!--This is about us section-->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Animated</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+    }
+
+    .about-header {
+      text-align: center;
+      padding: 100px 20px 20px;
+      background: linear-gradient(145deg, #0d0d0d 60%, #111 100%);
+    }
+
+    .about-header h1 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    .about-header span {
+      color: #ccff00;
+    }
+
+    .breadcrumb {
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .breadcrumb a {
+      color: #ccff00;
+      text-decoration: none;
+    }
+
+    .about-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 40px;
+      gap: 60px;
+      background: radial-gradient(circle at center, #111 0%, #0d0d0d 100%);
+      position: relative;
+    }
+
+    .about-images {
+      flex: 1;
+      position: relative;
+    }
+
+    .img-box {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .img-box img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .project-badge {
+      position: relative;
+      bottom: 10px;
+      left: 0px;
+      background: #ccff00;
+      color: #000;
+      padding: 10px;
+      border-radius: 40px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 5px 15px rgba(204, 255, 0, 0.4);
+      animation: float 3s ease-in-out infinite;
+      transition: transform 0.3s;
+    }
+
+    .project-badge:hover {
+      transform: scale(1.05) rotate(-1deg);
+      background-color: #caed2f;
+    }
+
+    .project-badge .icon {
+      font-size: 24px;
+    }
+
+    .about-text {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .about-text h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .about-text h2 span {
+      color: #ccff00;
+    }
+
+    .about-text p {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .features li::before {
+      content: '✔';
+      color: #ccff00;
+      margin-right: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #222;
+      border: none;
+      color: #fff;
+      padding: 14px 24px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      background: #333;
+    }
+
+    .btn-accent {
+      background: #ccff00;
+      color: #000;
+    }
+
+    .btn-accent:hover {
+      background: #d9ff33;
+    }
+
+    .stats-box {
+      background: #121212;
+      padding: 25px 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(204, 255, 0, 0.1);
+      width: 200px;
+      margin-top: 30px;
+    }
+
+    .stats-box .percent {
+      font-size: 36px;
+      font-weight: 700;
+      color: #ccff00;
+    }
+
+    .stats-box .label {
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    .stats-box .clients {
+      color: #ccff00;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Floating Animation */
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(10px);
+      }
+      50% {
+        transform: translateY(-16px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="about-header">
+    <h1>About <span>Us</span></h1>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> * About Us
+    </div>
+  </div>
+<!-- MOVING BANNER SECTION -->
+<div class="marquee-container">
+  <div class="marquee">
+    <span>📊 Analysis & Reporting</span>
+    <span>🎨 Graphic Designing</span>
+    <span>🧩 Website Designing</span>
+    <span>👨‍💻 Website Development</span>
+    <span>📢 Digital Marketing</span>
+    <span>📊 Analysis & Reporting</span>
+    <span>🎨 Graphic Designing</span>
+    <span>🧩 Website Designing</span>
+    <span>👨‍💻 Website Development</span>
+    <span>📢 Digital Marketing</span>
+  </div>
+</div>
+  <section class="about-section">
+    <div class="about-images">
+      <div class="img-box">
+        <img src="https://images.pexels.com/photos/3182763/pexels-photo-3182763.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Office Team">
+        <div class="project-badge">
+          <span class="icon">⚙</span>
+          653+ <br>Project Complete
+        </div>
+      </div>
+    </div>
+
+    <div class="about-text">
+      <h3>ABOUT COMPANY</h3>
+      <h2>We Provide <span>Creative</span> Solutions</h2>
+      <p>About Siteadda Labs – We have successfully designed and implemented for many clients worldwide.</p>
+
+      <ul class="features">
+        <li>Empowering Growth with Smart Solutions</li>
+        <li>Collaborative Approach for Maximum Impact</li>
+        <li>Innovative Solutions, Real-World Results</li>
+      </ul>
+
+      <a href="Contact us/contact.html"><button class="btn">Contact Us</button></a>
+      <a href="Contact us/contact.html"><button class="btn btn-accent">→</button></a>
+
+      <div class="stats-box">
+        <div class="percent">99%</div>
+        <div class="label">Success Rate</div>
+        <div class="clients">2,236</div>
+        <div class="label">Satisfied clients</div>
+      </div>
+    </div>
+     </section>
+
+  <!--OUR APPROACH SECTION-->
+  <section class="approach-section">
+  <div class="approach-left">
+    <p class="section-label"><span class="dot"></span> OUR APPROACH</p>
+    <h2>Taking a strategic <span class="highlight">approach</span> to IT solutions</h2>
+    <div class="explore-buttons">
+      <a href="about-us.html"><button class="btn-dark">Explore More</button></a>
+      <div class="btn-neon"><span>↗</span></div></a>
+    </div>
+  </div>
+
+  <div class="approach-right">
+    <div class="info-box">
+      <div class="icon">👁</div>
+      <div>
+        <h4>Our Mission</h4>
+        <p>About Siteadda Labs is to make innovative products and deliver unique services which process quality and customer satisfaction to feature value to your business.</p>
+      </div>
+    </div>
+    <div class="info-box">
+      <div class="icon">⭕</div>
+      <div>
+        <h4>Our Vision</h4>
+        <p>The vision of Siteadda Labs is to be a worldwide leader in providing the simplest and unique IT solution to enhance your productivity and business strength.</p>
+      </div>
+    </div>
+    <div class="info-box">
+      <div class="icon">💎</div>
+      <div>
+        <h4>Our Value</h4>
+        <p>Our value lies in providing organizations with cutting-edge IT solutions that facilitate success, efficiency, and growth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--company benefits section-->
+<section class="benefits-section">
+  <div class="benefits-header">
+    <p class="section-label"><span class="dot"></span> COMPANY BENEFITS</p>
+    <h2>Experience the <span class="highlight">advantage</span> of IT company</h2>
+  </div>
+
+  <div class="benefit-cards">
+    <div class="benefit-box">
+      <div class="benefit-icon">📦</div>
+      <h4>Expert Support</h4>
+      <p>Access skilled IT professionals for guidance.</p>
+    </div>
+    <div class="benefit-box">
+      <div class="benefit-icon">🧾</div>
+      <h4>Cost Efficiency</h4>
+      <p>Access skilled IT professionals for guidance.</p>
+    </div>
+    <div class="benefit-box">
+      <div class="benefit-icon">☁️</div>
+      <h4>Cloud Integration</h4>
+      <p>Access skilled IT professionals for guidance.</p>
+    </div>
+    <div class="benefit-box">
+      <div class="benefit-icon">🗄️</div>
+      <h4>Strategic Planning</h4>
+      <p>Access skilled IT professionals for guidance.</p>
+    </div>
+  </div>
+
+  <p class="benefit-footer-text">Let’s make something great work together. Get Free Quote</p>
+</section>
+
+
+<!--OUR SKILL SECTION-->
+<section class="skill-section">
+  <div class="skill-left">
+    <p class="section-label"><span class="dot"></span> OUR SKILL</p>
+    <h2>Expertise our <span class="highlight">IT company</span></h2>
+    <a href="Contact us/contact.html"><button class="contact-btn">
+      Contact Us 
+    </button></a>
+    <img src="your-team-photo1.jpg" alt="Team" class="skill-img mobile-img" />
+  </div>
+
+  <div class="skill-right">
+    <img src="your-team-photo2.jpg" alt="Team Working" class="skill-img" />
+
+    <div class="progress-wrapper">
+      <div class="progress-item">
+        <label>Development <span>90%</span></label>
+        <div class="progress-bar"><div class="progress-fill" data-percentage="90"></div></div>
+      </div>
+      <div class="progress-item">
+        <label>Designing <span>97%</span></label>
+        <div class="progress-bar"><div class="progress-fill" data-percentage="97"></div></div>
+      </div>
+      <div class="progress-item">
+        <label>Programming <span>85%</span></label>
+        <div class="progress-bar"><div class="progress-fill" data-percentage="85"></div></div>
+      </div>
+      <div class="progress-item">
+        <label>Digital Marketing <span>89%</span></label>
+        <div class="progress-bar"><div class="progress-fill" data-percentage="89"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const fills = document.querySelectorAll(".progress-fill");
+    fills.forEach((fill) => {
+      const percentage = fill.getAttribute("data-percentage");
+      setTimeout(() => {
+        fill.style.width = percentage + "%";
+      }, 300);
+    });
+  });
+</script>
+
+<!--TEAM DESCRIPTION-->
+<section class="testimonials-section" id="testimonials">
+  <h2 class="testimonial-heading">Our Team</h2>
+  <div class="testimonial-carousel">
+    
+    <div class="testimonial-slide active">
+      <img src="./assets/Priyanshu.jpg" alt="Client 1">
+    
+      <p>Role:- "CO-FOUNDER"</p>
+      <h4>- PRIYANSHU BOREKAR</h4>
+    </div>
+
+    <div class="testimonial-slide">
+      <img src="./assets/navneet.jpg" alt="Client 2">
+
+      <p>Role:- "CO-FOUNDER"</p>
+      <h4>- NAVNEET PATIDAR</h4>
+    </div>
+
+    <div class="testimonial-slide">
+      <img src="./assets/ruhi.jpg" alt="Client 3">
+
+      <p>Role:- "CONTENT WRITER"</p>
+      <h4>- AAROHI PATIL</h4>
+    </div>
+
+    <div class="testimonial-slide">
+  <img src="./assets/zoya.jpg" alt="Client 4">
+  <p>Role:- "GRAPHIC DESIGNER"</p>
+  <h4>- ZOYA SIDDIQUE</h4>
+</div>
+
+    <div class="testimonial-slide">
+      <img src="./assets/founder.jpg" alt="Client 5">
+      <p>Role:- "FOUNDER"</p>
+      <h4>- RESHMA PATIDAR</h4>
+    </div>
+
+    <!-- Add more slides as needed -->
+
+    <button class="carousel-btn prev" onclick="prevTestimonial()">❮</button>
+
+    <button class="carousel-btn next" onclick="nextTestimonial()">❯</button>
+
+  </div>
+</section>
+
+
+<script>
+  let current = 0;
+  const slides = document.querySelectorAll('.testimonial-slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) {
+        slide.classList.add('active');
+      }
+    });
+  }
+
+  function nextTestimonial() {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }
+
+  function prevTestimonial() {
+    current = (current - 1 + slides.length) % slides.length;
+    showSlide(current);
+  }
+
+  // Auto play every 3 seconds
+  setInterval(nextTestimonial, 4000);
+
+  // Initialize
+  document.addEventListener("DOMContentLoaded", () => {
+    showSlide(current);
+  });
+</script>
+
+<!--Branding-->
+<section class="hero-brand">
+  <p class="hero-subtitle">LET'S COLLABORATE</p>
+  <h1 class="hero-title">
+    ELEVATE YOUR BRAND<br />
+    GAME
+  </h1>
+  <a href="Contact us/contact.html" class="hero-button">
+    ↗<br />Get In Touch
+  </a>
+</section>
+
+<!--footer for address and all-->
+<footer class="custom-footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="your-logo.png" alt="Logo" class="footer-logo" />
+      <div class="contact-box">
+        <div class="contact-row">
+          <div class="icon-circle">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div>
+            
+            <p>vinayakadigiverse@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="icon-circle">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <p>Branch 1:– INDORE - 452009 (M.P.)</p>
+          <p>Branch 2:– NAGPUR - 440027 (M.H.)</p>
+        </div>
+        <div class="contact-row">
+          <div class="icon-circle phone">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div>
+            <p>Need help!</p>
+            <h3>+91–7083021583</h3>
+            <h3>+91–9039592878</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Quick Link</h4>
+        <ul>
+          <a href="index.html" style="color: white; text-decoration: none; "><li>Home</li></a>
+          <a href="about-us.html" style="color: white; text-decoration: none;" ><li>About Us</li></a>
+           <a href="Blog/blog.html" style="color: white; text-decoration: none;"><li>Blogs</li></a>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+         <a href="logo.html" style="color: white; text-decoration: none;" > <li>Graphic Designing</li></a>
+          <a href="Web design/webdesign.html" style="color: white; text-decoration: none;" > <li>Website Designing</li></a>
+          <a href="Web design/websitedev.html" style="color: white; text-decoration: none;"> <li>Website Development</li></a>
+           <a href="Marketing/DIGITAL.html" style="color: white; text-decoration: none;"><li>Digital Marketing</li></a>
+        </ul>
+
+              </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <a href="index.html"></a> <li>Privacy Policy</li></a>
+          <a href="index.html"></a> <li>Refund Policy</li></a>
+          <a href="Contact us/contact.html"></a> <li>Contact Us</li></a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-company">
+    <h2><b>About Our Company</b>  </h2>
+    <p>
+      Amazing design and experiences can only be achieved by talented people.
+      Luckily for us, we are surrounded by amazing talent and that talent
+      transcends their expertise into fantastic experiences. SITEADDA LABS has
+      successfully helped design and implement web sites for many clients
+      worldwide.
+    </p>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© Siteadda Labs All Rights Reserved.</p>
+    <div class="social-icons">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-pinterest"></i>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
