@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vinayaka Digiverse</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
@@ -11,16 +11,98 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<style>
+    /* HAMBURGER MENU */
+    .menu-toggle {
+      display: none;
+      font-size: 28px;
+      color: white;
+      cursor: pointer;
+    }
 
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+      }
+
+      .logo-img {
+        height: 120px;
+        width: auto;
+        margin: 0;
+      }
+
+      .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        z-index: 1001;
+      }
+
+      nav ul.navbar {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        background-color: #000;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+        z-index: 1000;
+      }
+
+      nav ul.navbar.active {
+        display: flex;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+      }
+
+      .hero-image img {
+        width: 90%;
+        margin-top: 20px;
+      }
+
+      .hero-text h1 {
+        font-size: 2.5rem;
+      }
+
+      .services .card {
+        width: 90%;
+      }
+
+      .about-content,
+      .why-container,
+      .footer-container,
+      .footer-links,
+      .faq-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .projects-section,
+      .approach-section,
+      .benefits-section,
+      .skill-section {
+        padding: 40px 20px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
     <div class="logo-container">
       <img  class="logo-img" src="assets/vdv fulllogo.png" alt="Vinayaka Digiverse Logo" />
     </div>
-
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
 <nav>
-   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
   <ul class="navbar" id = "navbar">
     <li><a href="index.html">Home</a></li>
     <li><a href="about-us.html">About Us</a></li>
@@ -83,10 +165,8 @@
             <li><a href="Marketing/DIGITAL.html">Digital Marketing</a></li>
           </ul>
         </li>
-
       </ul>
     </li>
-
     
     <li><a href="Blog/blog.html">Blogs</a></li>
     <li><a href="Pricing/Pricing.html">Pricing</a></li>
@@ -638,11 +718,10 @@ that meet your business needs.
   </div>
 </footer>
 <script>
-  function toggleMenu() {
-    const nav = document.getElementById("navbar");
-    nav.classList.toggle("active");
-  }
-</script>
+    function toggleMenu() {
+      document.getElementById('navbar').classList.toggle('active');
+    }
+  </script>
 
   
 </body>
