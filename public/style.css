@@ -1574,4 +1574,35 @@ nav a:hover {
     padding: 20px;
   }
 }
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.4rem;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-text h1::after {
+    content: 'Online';
+    display: block;
+    margin-top: 0.2em;
+  }
+
+  .hero-text h1 span {
+    display: none; /* Hide original 'Online' word on mobile */
+  }
+
+  .hero-image img {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    object-fit: contain;
+  }
+}
 
